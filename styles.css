@@ -41,19 +41,22 @@ nav li a:hover {
   color: #5a67d8;
 }
 
+.overview-hero {
+  background-color: #e2e8f0;
+  width: 100%;
+}
+
 .overview-hero .container {
   display: flex;
   margin-top: 20px;
   padding-top: 40px;
   padding-bottom: 40px;
-  background-color: #e2e8f0;
 }
 
 .overview-hero-image img {
-  width: 100px;
+  width: 120px;
   height: auto;
   padding-right: 20px;
-  padding-left: 40px;
 }
 
 .learn-about .container {
@@ -91,14 +94,12 @@ nav li a:hover {
 
 .card h3 {
   text-align: left;
-  max-width: 250px;
   color: #48bb78;
   font-size: 21px;
 }
 
 .card p {
   text-align: left;
-  max-width: 250px;
 }
 
 .testing {
@@ -114,15 +115,20 @@ nav li a:hover {
 
 .testing-desciption {
   flex: 1;
-  max-width: 600px;
 }
 
 .testing-desciption h2 {
   padding-top: 40px;
 }
 
+.testing-desciption p {
+  text-align: left;
+  margin-right: 100px;
+}
+
 .cta {
   margin-left: 20px;
+  margin-top: 70px;
 }
 
 .cta .btn {
@@ -171,22 +177,28 @@ nav li a:hover {
   font-size: 18px;
 }
 
+.newsletter {
+  background: #48bb78;
+  color: white;
+}
+
 .newsletter .container {
   display: flex;
   flex-direction: column;
   align-items: center;
   text-align: center;
   padding: 30px 20px;
-  background: #48bb78;
 }
 
 .newsletter h3 {
-  margin-bottom: 10px;
+  padding: 0;
+  margin-bottom: 15px;
 }
 
-.newsletter p {
-  max-width: 600px;
+.newsletter .container p {
+  margin-top: 0;
   margin-bottom: 20px;
+  text-align: left;
 }
 
 .newsletter form {
@@ -198,13 +210,15 @@ nav li a:hover {
 
 .newsletter input[type="email"] {
   padding: 10px;
-  width: 250px;
+  width: 200px;
+  height: 20px;
   border: 1px solid #ccc;
   border-radius: 4px;
 }
 
 .newsletter button {
-  padding: 10px 20px;
+  padding: 12px 20px;
+  width: 100px;
   border: none;
   background-color: #5a67d8;
   color: white;
@@ -214,6 +228,11 @@ nav li a:hover {
 
 .newsletter button:hover {
   background-color: #004999;
+}
+
+.newsletter .message {
+  padding-top: 20px;
+  color: white;
 }
 
 footer {
