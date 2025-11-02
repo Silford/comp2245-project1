@@ -2,6 +2,12 @@
 body {
   margin: 0;
   font-size: 16px;
+  font-family: system-ui, sans-serif;
+}
+
+header {
+  background-color: white;
+  font-size: 18px;
 }
 
 .container {
@@ -28,18 +34,26 @@ nav ul {
 
 nav li a {
   text-decoration: none;
+  color: #6b7280;
+}
+
+nav li a:hover {
+  color: #5a67d8;
 }
 
 .overview-hero .container {
   display: flex;
   margin-top: 20px;
   padding-top: 40px;
+  padding-bottom: 40px;
+  background-color: #e2e8f0;
 }
 
 .overview-hero-image img {
   width: 100px;
   height: auto;
   padding-right: 20px;
+  padding-left: 40px;
 }
 
 .learn-about .container {
@@ -47,12 +61,14 @@ nav li a {
   flex-direction: column;
   align-items: flex-start;
   text-align: left;
+  padding-bottom: 20px;
 }
 
 .learn-about .container h2 {
-  padding-top: 40px;
-  margin-bottom: 20px;
+  padding-top: 20px;
   text-align: left;
+  font-size: 24px;
+  color: #48bb78;
 }
 
 .learn-about .cards {
@@ -61,8 +77,11 @@ nav li a {
   gap: 30px;
 }
 
-.card {
-  text-align: center;
+.learn-about .card {
+  border: 1px solid #e2e8f0;
+  border-radius: 5px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+  padding: 20px;
 }
 
 .card img {
@@ -70,7 +89,13 @@ nav li a {
   height: auto;
 }
 
-.card h3,
+.card h3 {
+  text-align: left;
+  max-width: 250px;
+  color: #48bb78;
+  font-size: 21px;
+}
+
 .card p {
   text-align: left;
   max-width: 250px;
@@ -82,6 +107,9 @@ nav li a {
   justify-content: space-between;
   align-items: flex-start;
   width: 100%;
+  background-color: #4a5568;
+  color: white;
+  padding-bottom: 40px;
 }
 
 .testing-desciption {
@@ -99,21 +127,25 @@ nav li a {
 
 .cta .btn {
   text-decoration: none;
+  background: #48bb78;
+  border-radius: 5px;
+  color: white;
+  padding: 10px 20px;
 }
 
 .stories .container {
   margin: 0 auto;
-  padding: 10px;
+  padding: 60px 0 60px 0;
   display: flex;
   flex-direction: column;
   align-items: flex-start;
 }
 
 .stories .container h2 {
-  padding-top: 40px;
   margin-bottom: 20px;
   white-space: nowrap;
   text-align: left;
+  color: #5a67d8;
 }
 
 .stories article {
@@ -129,17 +161,26 @@ nav li a {
   border-radius: 50%;
 }
 
-.newsletter .container {
-  display: flex;
-  flex-direction: column; /* stack heading, paragraph, and form vertically */
-  align-items: center; /* center them horizontally */
-  text-align: center; /* center the text */
-  padding: 40px 20px;
+.stories .article-body a {
+  font-size: 18px;
+  text-decoration: none;
+  color: #5a67d8;
 }
 
-/* make sure heading and paragraph have breathing room */
+.stories .article-body h3 {
+  font-size: 18px;
+}
+
+.newsletter .container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  padding: 30px 20px;
+  background: #48bb78;
+}
+
 .newsletter h3 {
-  padding-top: 40px;
   margin-bottom: 10px;
 }
 
@@ -148,7 +189,6 @@ nav li a {
   margin-bottom: 20px;
 }
 
-/* keep input and button side-by-side */
 .newsletter form {
   display: flex;
   justify-content: center;
@@ -166,7 +206,7 @@ nav li a {
 .newsletter button {
   padding: 10px 20px;
   border: none;
-  background-color: #0066cc;
+  background-color: #5a67d8;
   color: white;
   border-radius: 4px;
   cursor: pointer;
@@ -174,4 +214,9 @@ nav li a {
 
 .newsletter button:hover {
   background-color: #004999;
+}
+
+footer {
+  color: white;
+  background-color: #4a5568;
 }
