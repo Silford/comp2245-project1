@@ -1,11 +1,177 @@
 /* Add your CSS to this file */
 body {
-    margin: 0;
-    font-size: 16px;
+  margin: 0;
+  font-size: 16px;
 }
 
 .container {
-    margin: 0 auto;
-    max-width: 960px;
-    width: 100%;
+  margin: 0 auto;
+  max-width: 960px;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.container h1 {
+  margin: 0;
+}
+
+nav ul {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  list-style: none;
+  gap: 10px;
+  float: right;
+}
+
+nav li a {
+  text-decoration: none;
+}
+
+.overview-hero .container {
+  display: flex;
+  margin-top: 20px;
+  padding-top: 40px;
+}
+
+.overview-hero-image img {
+  width: 100px;
+  height: auto;
+  padding-right: 20px;
+}
+
+.learn-about .container {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  text-align: left;
+}
+
+.learn-about .container h2 {
+  padding-top: 40px;
+  margin-bottom: 20px;
+  text-align: left;
+}
+
+.learn-about .cards {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 30px;
+}
+
+.card {
+  text-align: center;
+}
+
+.card img {
+  width: 70%;
+  height: auto;
+}
+
+.card h3,
+.card p {
+  text-align: left;
+  max-width: 250px;
+}
+
+.testing {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: flex-start;
+  width: 100%;
+}
+
+.testing-desciption {
+  flex: 1;
+  max-width: 600px;
+}
+
+.testing-desciption h2 {
+  padding-top: 40px;
+}
+
+.cta {
+  margin-left: 20px;
+}
+
+.cta .btn {
+  text-decoration: none;
+}
+
+.stories .container {
+  margin: 0 auto;
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.stories .container h2 {
+  padding-top: 40px;
+  margin-bottom: 20px;
+  white-space: nowrap;
+  text-align: left;
+}
+
+.stories article {
+  display: flex;
+  align-items: flex-start;
+  gap: 20px;
+}
+
+.stories article img {
+  width: 100px;
+  height: 100px;
+  object-fit: cover;
+  border-radius: 50%;
+}
+
+.newsletter .container {
+  display: flex;
+  flex-direction: column; /* stack heading, paragraph, and form vertically */
+  align-items: center; /* center them horizontally */
+  text-align: center; /* center the text */
+  padding: 40px 20px;
+}
+
+/* make sure heading and paragraph have breathing room */
+.newsletter h3 {
+  padding-top: 40px;
+  margin-bottom: 10px;
+}
+
+.newsletter p {
+  max-width: 600px;
+  margin-bottom: 20px;
+}
+
+/* keep input and button side-by-side */
+.newsletter form {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+
+.newsletter input[type="email"] {
+  padding: 10px;
+  width: 250px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.newsletter button {
+  padding: 10px 20px;
+  border: none;
+  background-color: #0066cc;
+  color: white;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.newsletter button:hover {
+  background-color: #004999;
 }
